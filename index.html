@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-image: url('images/bg-img.jpg');">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <ul class="header__items">
+          <li class="header__item">
+            <img class="header__item-icon" src="images/wallet.png" alt="">
+            <div class="header__item-text" id="walletAdress">Адрес</div>
+          </li>
+          <li class="header__item">
+            <img class="header__item-icon" src="images/monetization.png" alt="">
+            <div class="header__item-text" id="walletBalance">Кол. монет</div>
+          </li>
+        </ul>
+        <div class="header__box">
+          <div class="header__box-text">Кошелёк подключен</div>
+          <button class="header__box-btn" id="walletBtn">Подключиться</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="sha-block">
+      <div class="container">
+        <h2 class="sha-block__title">
+          Получения хеша строки с помощью алгоритма SHA-256
+        </h2>
+        <textarea class="sha-block__textarea" id="shaBlock"></textarea>
+        <div class="sha-block__total" id="textShaBlock">Хеш: <span></span></div>
+      </div>
+    </section>
+    <section class="sha-block">
+      <div class="container">
+        <h2 class="sha-block__title">
+          Шифрование AES
+        </h2>
+        <textarea class="sha-block__textarea" id="aesBlock"></textarea>
+        <div class="sha-block__total" id="textAesBlock">Шифр: <span></span></div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="text/javascript" src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+  <script src="js/sha256.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
